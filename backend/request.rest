@@ -1,0 +1,62 @@
+###
+GET http://localhost:3001/api/user/getUser
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiZW1haWwiOiJ0ZXN0MUB0ZXN0LmNvbSIsImlhdCI6MTcwMTQwNDczOSwiZXhwIjoxNzAxNDA4MzM5fQ.aarIngV8cu2ekSeO_-lz4GceL9MstsbF41Z_2jNDKjA
+
+###
+POST http://localhost:3001/api/user/register
+Content-Type: application/json
+
+{
+		"name": "Test User 1",
+		"email": "test1@test.com",
+		"password": "test123"
+}
+
+###
+POST http://localhost:3001/api/user/login
+Content-Type: application/json
+
+{
+		"email": "test1@test.com",
+		"password": "test123"
+}
+
+###
+DELETE http://localhost:3001/api/user/logout
+Content-Type: application/json
+
+###
+GET http://localhost:3001/api/notes
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiZW1haWwiOiJ0ZXN0MUB0ZXN0LmNvbSIsImlhdCI6MTcwMTQwNDczOSwiZXhwIjoxNzAxNDA4MzM5fQ.aarIngV8cu2ekSeO_-lz4GceL9MstsbF41Z_2jNDKjA
+
+###
+GET http://localhost:3001/api/notes/1
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsIm5hbWUiOiJ0ZXN0IHVzZXIgMSIsImVtYWlsIjoidGVzdDFAdGVzdC5jb20iLCJpYXQiOjE3MDE0MjQwOTEsImV4cCI6MTcwMTQyNDEwNn0.nKtBkyp-seFe7ndnv1rP0NU90ZuATR1ZL8A-ojr-os0
+
+###
+POST http://localhost:3001/api/notes/add
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiZW1haWwiOiJ0ZXN0MUB0ZXN0LmNvbSIsImlhdCI6MTcwMTQwNDczOSwiZXhwIjoxNzAxNDA4MzM5fQ.aarIngV8cu2ekSeO_-lz4GceL9MstsbF41Z_2jNDKjA
+
+{
+	"title": "Test Note 1",
+	"body": "Test Note 1 Body"
+}
+
+###
+PUT http://localhost:3001/api/notes/1
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiZW1haWwiOiJ0ZXN0MUB0ZXN0LmNvbSIsImlhdCI6MTcwMTQwNDczOSwiZXhwIjoxNzAxNDA4MzM5fQ.aarIngV8cu2ekSeO_-lz4GceL9MstsbF41Z_2jNDKjA
+
+{
+	"title": "Test Note Updated 1",
+	"body": "Test Note 1 Body"
+}
+
+###
+DELETE  http://localhost:3001/api/notes/1
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiZW1haWwiOiJ0ZXN0MUB0ZXN0LmNvbSIsImlhdCI6MTcwMTQwNDczOSwiZXhwIjoxNzAxNDA4MzM5fQ.aarIngV8cu2ekSeO_-lz4GceL9MstsbF41Z_2jNDKjA
